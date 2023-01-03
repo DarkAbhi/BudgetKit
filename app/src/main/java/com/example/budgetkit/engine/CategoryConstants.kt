@@ -14,3 +14,28 @@ val FOOD_AND_DRINK_NAMES = listOf(
     "baskin robbins",
     "pizza",
 )
+
+val GROCERY_NAMES = listOf(
+    ""
+)
+
+val SHOPPING_NAMES = listOf(
+    ""
+)
+
+val TRAVEL_NAMES = listOf(
+    ""
+)
+
+val FUEL_NAMES = listOf(
+    "fuel",
+    "petrol",
+)
+
+val ENTERTAINMENT_NAMES = listOf(
+    "netflix",
+    "playstation",
+    "xbox",
+    "bookmyshow",
+    "book my show"
+)
