@@ -15,18 +15,10 @@
         android:supportsRtl="true"
         android:name=".app.BudgetKitApplication"
         android:theme="@style/Theme.BudgetKit"
-        tools:targetApi="31">
-
-        <receiver android:name=".receiver.SmsListener"
-            android:exported="true"
-            android:permission="android.permission.BROADCAST_SMS">
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
+        tools:targetApi="s">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:theme="@style/Theme.BudgetKit"
             android:exported="true">
             <intent-filter>

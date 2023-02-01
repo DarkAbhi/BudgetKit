@@ -1,5 +1,7 @@
 package com.example.budgetkit
 
+import com.example.budgetkit.engine.FUEL_CATEGORY
+import com.example.budgetkit.engine.decideCategory
 import com.example.budgetkit.engine.extractAmountSpent
 import com.example.budgetkit.engine.extractBalance
 import org.junit.Test
@@ -33,6 +35,11 @@ class DataEngineTest {
         exampleMessages.forEach {
             assert(it.extractAmountSpent()!=null)
         }
+    }
+
+    @Test
+    fun checkCategory() {
+        assert(exampleMessages[0].decideCategory() == FUEL_CATEGORY)
     }
 
 }

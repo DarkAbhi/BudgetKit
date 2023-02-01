@@ -1,4 +1,4 @@
-package com.example.budgetkit.ui.theme
+package com.example.budgetkit.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

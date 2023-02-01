@@ -1,10 +1,13 @@
 package com.example.budgetkit.models
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "transactions")
 data class Transaction(
-    private val amountSpent: Double,
-    private val category: String,
-    private val timestamp: Long,
+    @PrimaryKey val id:String,
+    val amountSpent: Double,
+    val category: String,
+    val timestamp: Long,
+    val sms: String
 )
